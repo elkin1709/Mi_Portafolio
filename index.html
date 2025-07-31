@@ -2,316 +2,370 @@
 <html lang="es">
 
 <head>
+  <!-- Meta tags básicos para SEO y responsividad -->
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>PortaFolio - Elkin Anaya</title>
   <meta name="description" content="Portafolio de Elkin Anaya - Desarrollador Web">
-  <meta name="keywords" content="">
+  <meta name="keywords" content="desarrollador web, frontend, backend, HTML, CSS, JavaScript, React, Node.js, Python">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-  <!-- Fonts -->
+  <!-- Fuentes de Google Fonts - Optimizadas para rendimiento -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
-  <!-- Vendor CSS Files -->
+  <!-- Librerías CSS de terceros -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-  <!-- Main CSS File -->
+  <!-- Estilos personalizados del portafolio -->
   <link href="assets/css/main.css" rel="stylesheet">
 
   <!-- =======================================================
-  * Template Name: SnapFolio
-  * Template URL: https://bootstrapmade.com/snapfolio-bootstrap-portfolio-template/
-  * Updated: Jul 21 2025 with Bootstrap v5.3.7
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
+  * Template Base: SnapFolio de BootstrapMade
+  * Modificado y personalizado por Elkin Anaya
+  * Tecnologías utilizadas: HTML5, CSS3, JavaScript, Bootstrap 5
+  * Enfoque en accesibilidad y semántica web
   ======================================================== -->
 </head>
 
 <body class="index-page">
 
+  <!-- Enlace de accesibilidad para saltar al contenido principal -->
+  <!-- Útil para usuarios de lectores de pantalla y navegación por teclado -->
+  <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+
+  <!-- =======================================================
+  * HEADER - Navegación principal y enlaces sociales
+  * Contiene el menú de navegación y enlaces a redes sociales
+  * Diseño responsive con menú hamburguesa para móviles
+  ======================================================== -->
   <header id="header" class="header dark-background d-flex flex-column justify-content-center">
-    <i class="header-toggle d-xl-none bi bi-list"></i>
+    <!-- Botón de menú hamburguesa para dispositivos móviles -->
+    <button class="header-toggle d-xl-none bi bi-list" aria-label="Abrir menú de navegación"></button>
 
     <div class="header-container d-flex flex-column align-items-start">
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Inicio</a></li>
-          <li><a href="#about"><i class="bi bi-person navicon"></i> Perfil</a></li>
-          <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resumen</a></li>
-          <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
-          <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i> Servicios</a></li>
-          <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+      <!-- Menú de navegación principal -->
+      <nav id="navmenu" class="navmenu" role="navigation" aria-label="Navegación principal">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#hero" class="nav-link active" aria-current="page"><i class="bi bi-house navicon" aria-hidden="true"></i><span>Inicio</span></a></li>
+          <li class="nav-item"><a href="#about" class="nav-link"><i class="bi bi-person navicon" aria-hidden="true"></i><span>Perfil</span></a></li>
+          <li class="nav-item"><a href="#resume" class="nav-link"><i class="bi bi-file-earmark-text navicon" aria-hidden="true"></i><span>Resumen</span></a></li>
+          <li class="nav-item"><a href="#portfolio" class="nav-link"><i class="bi bi-images navicon" aria-hidden="true"></i><span>Portfolio</span></a></li>
+          <li class="nav-item"><a href="#services" class="nav-link"><i class="bi bi-hdd-stack navicon" aria-hidden="true"></i><span>Servicios</span></a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link"><i class="bi bi-envelope navicon" aria-hidden="true"></i><span>Contacto</span></a></li>
         </ul>
       </nav>
 
-      <div class="social-links text-center">
-        <a href="https://github.com/elkin1709?tab=repositories" target="_blank" title="Ver mis repositorios en GitHub" class="github"><i class="bi bi-github"></i></a>
-        <a href="https://www.linkedin.com/in/elkin-julian-anaya-arismendi-645455375" class="linkedin"><i class="bi bi-linkedin"></i></a>
+      <!-- Enlaces a redes sociales profesionales -->
+      <!-- Incluye GitHub para repositorios y LinkedIn para perfil profesional -->
+      <div class="social-links text-center" role="complementary" aria-label="Enlaces a redes sociales">
+        <a href="https://github.com/elkin1709?tab=repositories" target="_blank" rel="noopener noreferrer" title="Ver mis repositorios en GitHub" class="social-link github">
+          <i class="bi bi-github" aria-hidden="true"></i>
+          <span class="sr-only">GitHub</span>
+        </a>
+        <a href="https://www.linkedin.com/in/elkin-julian-anaya-arismendi-645455375" target="_blank" rel="noopener noreferrer" title="Ver mi perfil en LinkedIn" class="social-link linkedin">
+          <i class="bi bi-linkedin" aria-hidden="true"></i>
+          <span class="sr-only">LinkedIn</span>
+        </a>
       </div>
-
     </div>
-
   </header>
 
-  <main class="main">
+  <!-- =======================================================
+  * MAIN CONTENT - Contenido principal del portafolio
+  * Estructura semántica con secciones bien definidas
+  ======================================================== -->
+  <main id="main-content" class="main">
 
-    <!-- Hero Section -->
-    <section id="hero" class="hero section">
-
-      <div class="background-elements">
+    <!-- =======================================================
+    * HERO SECTION - Sección de presentación principal
+    * Contiene el título, descripción y botones de acción
+    * Diseño responsive con imagen de perfil
+    ======================================================== -->
+    <section id="hero" class="hero section" role="banner" aria-labelledby="hero-title">
+      <!-- Elementos de fondo decorativos -->
+      <div class="background-elements" aria-hidden="true">
         <div class="bg-circle circle-1"></div>
         <div class="bg-circle circle-2"></div>
       </div>
 
       <div class="hero-content">
-
         <div class="container">
           <div class="row align-items-center">
-
+            <!-- Columna izquierda: Contenido textual y botones de acción -->
             <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
-              <div class="hero-text">
-                <h1>Porta<span class="accent-text">Folio</span></h1>
-                <h2>Elkin Anaya</h2>
-                <p class="lead">Yo soy <span class="typed" data-typed-items="Programador"></span></p>
+              <article class="hero-text">
+                <header class="hero-header">
+                  <h1 id="hero-title">Porta<span class="accent-text">Folio</span></h1>
+                  <h2 class="hero-subtitle">Elkin Anaya</h2>
+                </header>
+                
+                <p class="lead">Yo soy <span class="typed" data-typed-items="Programador" aria-live="polite"></span></p>
                 <p class="description">Soy una persona responsable, consiente de sus responsabilidades, colaborativo, amistoso, discreto, con una gran capacidad para adquirir nuevos conocimientos.</p>
 
-                <div class="hero-actions">
-                  <a href="#portfolio" class="btn btn-primary">Mi Portafolio</a>
-                  <a href="#contact" class="btn btn-outline">Contacto</a>
+                <!-- Botones de acción principales -->
+                <div class="hero-actions" role="group" aria-label="Acciones principales">
+                  <a href="#portfolio" class="btn btn-primary" role="button">Mi Portafolio</a>
+                  <a href="#contact" class="btn btn-outline" role="button">Contacto</a>
                 </div>
 
-                <div class="social-links">
-                  <a href="https://github.com/elkin1709?tab=repositories" target="_blank" title="Ver mis repositorios en GitHub"><i class="bi bi-github"></i></a>
-                  <a href="https://www.linkedin.com/in/elkin-julian-anaya-arismendi-645455375" target="_blank" title="Ver mi perfil en LinkedIn"><i class="bi bi-linkedin"></i></a>
+                <!-- Enlaces a redes sociales -->
+                <div class="social-links" role="complementary" aria-label="Enlaces a redes sociales">
+                  <a href="https://github.com/elkin1709?tab=repositories" target="_blank" rel="noopener noreferrer" title="Ver mis repositorios en GitHub" class="social-link">
+                    <i class="bi bi-github" aria-hidden="true"></i>
+                    <span class="sr-only">GitHub</span>
+                  </a>
+                  <a href="https://www.linkedin.com/in/elkin-julian-anaya-arismendi-645455375" target="_blank" rel="noopener noreferrer" title="Ver mi perfil en LinkedIn" class="social-link">
+                    <i class="bi bi-linkedin" aria-hidden="true"></i>
+                    <span class="sr-only">LinkedIn</span>
+                  </a>
                 </div>
-              </div>
+              </article>
             </div>
 
+            <!-- Columna derecha: Imagen de perfil con efectos visuales -->
             <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
-              <div class="hero-visual">
+              <figure class="hero-visual">
                 <div class="profile-container">
-                  <div class="profile-background"></div>
-                  <img src="assets/img/portfolio/img pricipal.png" alt="Elkin Anaya" class="profile-image">
+                  <div class="profile-background" aria-hidden="true"></div>
+                  <img src="assets/img/portfolio/img pricipal.png" alt="Elkin Anaya - Desarrollador Web" class="profile-image" loading="eager">
                 </div>
-              </div>
+              </figure>
             </div>
-
           </div>
         </div>
       </div>
+    </section>
 
-    </section><!-- /Hero Section -->
-
-    <!-- About Section -->
-    <section id="about" class="about section">
-
+    <!-- =======================================================
+    * ABOUT SECTION - Información personal y profesional
+    * Contiene perfil, estadísticas y detalles profesionales
+    * Diseño en dos columnas con tarjeta de perfil
+    ======================================================== -->
+    <section id="about" class="about section" aria-labelledby="about-title">
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-
         <div class="row">
+          <!-- Columna izquierda: Tarjeta de perfil con información de contacto -->
           <div class="col-lg-5" data-aos="zoom-in" data-aos-delay="200">
-            <div class="profile-card">
-              <div class="profile-header">
-                <div class="profile-image">
-                  <img src="assets/img/portfolio/FOTOEA.jpg" alt="Profile Image" class="img-fluid">
-                </div>
-                <div class="profile-badge">
+            <article class="profile-card">
+              <header class="profile-header">
+                <figure class="profile-image">
+                  <img src="assets/img/portfolio/FOTOEA.jpg" alt="Elkin Anaya - Foto de perfil" class="img-fluid" loading="lazy">
+                </figure>
+                <div class="profile-badge" aria-hidden="true">
                   <i class="bi bi-check-circle-fill"></i>
                 </div>
-              </div>
+              </header>
 
               <div class="profile-content">
-                <h3>Elkin Anaya</h3>
+                <h3 class="profile-name">Elkin Anaya</h3>
                 <p class="profession">Estudiante de Desarrollo Web</p>
 
-                <div class="contact-links">
+                <!-- Información de contacto -->
+                <address class="contact-links">
                   <a href="mailto:elkinjulian47@gmail.com" class="contact-item">
-                    <i class="bi bi-envelope"></i>
-                    elkinjulian47@gmail.com
+                    <i class="bi bi-envelope" aria-hidden="true"></i>
+                    <span>elkinjulian47@gmail.com</span>
                   </a>
                   <a href="tel:+573157832101" class="contact-item">
-                    <i class="bi bi-telephone"></i>
-                    +57 3157832101
+                    <i class="bi bi-telephone" aria-hidden="true"></i>
+                    <span>+57 3157832101</span>
                   </a>
-                  <a href="#" class="contact-item">
-                    <i class="bi bi-geo-alt"></i>
-                    Villa de Rosario
+                  <div class="contact-item">
+                    <i class="bi bi-geo-alt" aria-hidden="true"></i>
+                    <span>Villa de Rosario</span>
+                  </div>
+                  <a href="https://github.com/elkin1709?tab=repositories" target="_blank" rel="noopener noreferrer" class="contact-item">
+                    <i class="bi bi-github" aria-hidden="true"></i>
+                    <span>GitHub - Ver repositorios</span>
                   </a>
-                  <a href="https://github.com/elkin1709?tab=repositories" target="_blank" class="contact-item">
-                    <i class="bi bi-github"></i>
-                    GitHub - Ver repositorios
-                  </a>
-                </div>
+                </address>
               </div>
-            </div>
+            </article>
           </div>
 
+          <!-- Columna derecha: Contenido principal con descripción y estadísticas -->
           <div class="col-lg-7" data-aos="fade-left" data-aos-delay="300">
-            <div class="about-content">
-              <div class="section-header">
-                <h2>Apasionado por la creación de experiencias digitales</h2>
-              </div>
+            <article class="about-content">
+              <header class="section-header">
+                <h2 id="about-title">Apasionado por la creación de experiencias digitales</h2>
+              </header>
 
               <div class="description">
                 <p>Soy un desarrollador web en formación con pasión por crear experiencias digitales funcionales y atractivas. Actualmente estudio en Campuslands, donde me enfoco en el desarrollo frontend y backend con tecnologías como HTML, CSS, JavaScript y Node.js.</p>
-
                 <p>Me entusiasma aprender nuevas herramientas, colaborar en proyectos reales y mejorar constantemente mis habilidades</p>
               </div>
 
-              <div class="stats-grid">
-                <div class="stat-item">
-                  <div class="stat-number">20+</div>
-                  <div class="stat-label">Proyectos Academicos</div>
+              <!-- Estadísticas -->
+              <section class="stats-section" aria-labelledby="stats-title">
+                <h3 id="stats-title" class="sr-only">Estadísticas profesionales</h3>
+                <div class="stats-grid" role="list">
+                  <div class="stat-item" role="listitem">
+                    <div class="stat-number" aria-label="Más de 20">20+</div>
+                    <div class="stat-label">Proyectos Académicos</div>
+                  </div>
+                  <div class="stat-item" role="listitem">
+                    <div class="stat-number" aria-label="1">1</div>
+                    <div class="stat-label">Año de experiencia aprendiendo desarrollo web</div>
+                  </div>
+                  <div class="stat-item" role="listitem">
+                    <div class="stat-number" aria-label="98 por ciento">98%</div>
+                    <div class="stat-label">Efectividad de proyectos</div>
+                  </div>
                 </div>
-                <div class="stat-item">
-                  <div class="stat-number">1</div>
-                  <div class="stat-label">Año de experiencia aprendiendo desarrollo web</div>
-                </div>
-                <div class="stat-item">
-                  <div class="stat-number">98%</div>
-                  <div class="stat-label">Efectividad de proyectos</div>
-                </div>
-              </div>
+              </section>
 
-              <div class="details-grid">
-                <div class="detail-row">
-                  <div class="detail-item">
-                    <span class="detail-label">Especializacion</span>
-                    <span class="detail-value">Desarrollo Web | Frontend y Backend</span>
+              <!-- Detalles profesionales -->
+              <section class="details-section" aria-labelledby="details-title">
+                <h3 id="details-title" class="sr-only">Detalles profesionales</h3>
+                <dl class="details-grid">
+                  <div class="detail-row">
+                    <div class="detail-item">
+                      <dt class="detail-label">Especialización</dt>
+                      <dd class="detail-value">Desarrollo Web | Frontend y Backend</dd>
+                    </div>
+                    <div class="detail-item">
+                      <dt class="detail-label">Nivel de Experiencia</dt>
+                      <dd class="detail-value">En Formación | Nivel Junior</dd>
+                    </div>
                   </div>
-                  <div class="detail-item">
-                    <span class="detail-label">Nivel de Experiencia</span>
-                    <span class="detail-value">En Formación | Nivel Junior</span>
+                  <div class="detail-row">
+                    <div class="detail-item">
+                      <dt class="detail-label">Educación</dt>
+                      <dd class="detail-value">Campuslands - Formación intensiva en programación y habilidades blandas</dd>
+                    </div>
+                    <div class="detail-item">
+                      <dt class="detail-label">Idiomas</dt>
+                      <dd class="detail-value">Español (nativo), Inglés (intermedio)</dd>
+                    </div>
                   </div>
-                </div>
-                <div class="detail-row">
-                  <div class="detail-item">
-                    <span class="detail-label">Educacion</span>
-                    <span class="detail-value">Campuslands - Formación intensiva en programación y habilidades blandas</span>
-                  </div>
-                  <div class="detail-item">
-                    <span class="detail-label">Lenguajes</span>
-                    <span class="detail-value">Español (nativo), Inglés (intermedio)</span>
-                  </div>
-                </div>
-              </div>
-
-
-            </div>
+                </dl>
+              </section>
+            </article>
           </div>
         </div>
-
       </div>
+    </section>
 
-    </section><!-- /About Section -->
-
-    <!-- Skills Section -->
-    <section id="skills" class="skills section">
-
+    <!-- =======================================================
+    * SKILLS SECTION - Habilidades técnicas y competencias
+    * Muestra habilidades frontend y backend con barras de progreso
+    * Organizado en dos columnas por especialización
+    ======================================================== -->
+    <section id="skills" class="skills section" aria-labelledby="skills-title">
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Skills</h2>
-        <p>Estas son algunas de las tecnologías que he aprendido y practicado durante mi proceso de formación intensiva en Campuslands, enfocándome en el desarrollo web completo.</p>
-        <p>Continuamente trabajo en proyectos que me permiten mejorar mis habilidades tanto en frontend como en backend.</p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row">
-          <div class="col-lg-6">
-            <div class="skills-category" data-aos="fade-up" data-aos-delay="200">
-              <h3>Front-end Development</h3>
-              <div class="skills-animation">
-                <div class="skill-item">
-                  <div class="d-flex justify-content-between align-items-center">
-                    <h4>HTML/CSS</h4>
-                    <span class="skill-percentage">95%</span>
-                  </div>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                  <div class="skill-tooltip">Expert level knowledge of semantic HTML5 and modern CSS3 techniques</div>
-                </div>
-
-                <div class="skill-item">
-                  <div class="d-flex justify-content-between align-items-center">
-                    <h4>JavaScript</h4>
-                    <span class="skill-percentage">85%</span>
-                  </div>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                  <div class="skill-tooltip">Strong proficiency in ES6+, DOM manipulation, and modern frameworks</div>
-                </div>
-
-                <div class="skill-item">
-                  <div class="d-flex justify-content-between align-items-center">
-                    <h4>React</h4>
-                    <span class="skill-percentage">80%</span>
-                  </div>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                  <div class="skill-tooltip">Experience with React hooks, state management, and component architecture</div>
-                </div>
-              </div>
-            </div><!-- End Frontend Skills -->
-          </div>
-
-          <div class="col-lg-6">
-            <div class="skills-category" data-aos="fade-up" data-aos-delay="300">
-              <h3>Back-end Development</h3>
-              <div class="skills-animation">
-                <div class="skill-item">
-                  <div class="d-flex justify-content-between align-items-center">
-                    <h4>Node.js</h4>
-                    <span class="skill-percentage">75%</span>
-                  </div>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                  <div class="skill-tooltip">Server-side JavaScript development with Express and REST APIs</div>
-                </div>
-
-                <div class="skill-item">
-                  <div class="d-flex justify-content-between align-items-center">
-                    <h4>Python</h4>
-                    <span class="skill-percentage">70%</span>
-                  </div>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                  <div class="skill-tooltip">Python development with Django and data analysis tools</div>
-                </div>
-
-                <div class="skill-item">
-                  <div class="d-flex justify-content-between align-items-center">
-                    <h4>SQL</h4>
-                    <span class="skill-percentage">65%</span>
-                  </div>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                  <div class="skill-tooltip">Database design, optimization, and complex queries</div>
-                </div>
-              </div>
-            </div><!-- End Backend Skills -->
-          </div>
-        </div>
-
+        <header>
+          <h2 id="skills-title">Habilidades Técnicas</h2>
+          <p>Estas son algunas de las tecnologías que he aprendido y practicado durante mi proceso de formación intensiva en Campuslands, enfocándome en el desarrollo web completo.</p>
+          <p>Continuamente trabajo en proyectos que me permiten mejorar mis habilidades tanto en frontend como en backend.</p>
+        </header>
       </div>
 
-    </section><!-- /Skills Section -->
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row">
+          <!-- Columna izquierda: Habilidades de desarrollo Frontend -->
+          <div class="col-lg-6">
+            <article class="skills-category" data-aos="fade-up" data-aos-delay="200">
+              <header>
+                <h3>Desarrollo Frontend</h3>
+              </header>
+              <div class="skills-animation" role="list">
+                <div class="skill-item" role="listitem">
+                  <header class="skill-header">
+                    <h4>HTML/CSS</h4>
+                    <span class="skill-percentage" aria-label="95 por ciento">95%</span>
+                  </header>
+                  <div class="progress" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" aria-label="Progreso HTML/CSS">
+                    <div class="progress-bar"></div>
+                  </div>
+                  <p class="skill-tooltip">Conocimiento experto de HTML5 semántico y técnicas modernas de CSS3</p>
+                </div>
 
-    <!-- Resume Section -->
+                <div class="skill-item" role="listitem">
+                  <header class="skill-header">
+                    <h4>JavaScript</h4>
+                    <span class="skill-percentage" aria-label="85 por ciento">85%</span>
+                  </header>
+                  <div class="progress" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" aria-label="Progreso JavaScript">
+                    <div class="progress-bar"></div>
+                  </div>
+                  <p class="skill-tooltip">Fuerte competencia en ES6+, manipulación del DOM y frameworks modernos</p>
+                </div>
+
+                <div class="skill-item" role="listitem">
+                  <header class="skill-header">
+                    <h4>React</h4>
+                    <span class="skill-percentage" aria-label="80 por ciento">80%</span>
+                  </header>
+                  <div class="progress" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" aria-label="Progreso React">
+                    <div class="progress-bar"></div>
+                  </div>
+                  <p class="skill-tooltip">Experiencia con React hooks, gestión de estado y arquitectura de componentes</p>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Columna derecha: Habilidades de desarrollo Backend -->
+          <div class="col-lg-6">
+            <article class="skills-category" data-aos="fade-up" data-aos-delay="300">
+              <header>
+                <h3>Desarrollo Backend</h3>
+              </header>
+              <div class="skills-animation" role="list">
+                <div class="skill-item" role="listitem">
+                  <header class="skill-header">
+                    <h4>Node.js</h4>
+                    <span class="skill-percentage" aria-label="75 por ciento">75%</span>
+                  </header>
+                  <div class="progress" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" aria-label="Progreso Node.js">
+                    <div class="progress-bar"></div>
+                  </div>
+                  <p class="skill-tooltip">Desarrollo JavaScript del lado del servidor con Express y APIs REST</p>
+                </div>
+
+                <div class="skill-item" role="listitem">
+                  <header class="skill-header">
+                    <h4>Python</h4>
+                    <span class="skill-percentage" aria-label="70 por ciento">70%</span>
+                  </header>
+                  <div class="progress" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" aria-label="Progreso Python">
+                    <div class="progress-bar"></div>
+                  </div>
+                  <p class="skill-tooltip">Desarrollo con Python, Django y herramientas de análisis de datos</p>
+                </div>
+
+                <div class="skill-item" role="listitem">
+                  <header class="skill-header">
+                    <h4>SQL</h4>
+                    <span class="skill-percentage" aria-label="65 por ciento">65%</span>
+                  </header>
+                  <div class="progress" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" aria-label="Progreso SQL">
+                    <div class="progress-bar"></div>
+                  </div>
+                  <p class="skill-tooltip">Diseño de bases de datos, optimización y consultas complejas</p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================
+    * RESUME SECTION - Experiencia profesional y educación
+    * Contiene historial laboral, educación y habilidades técnicas
+    * Diseño en dos columnas con información detallada
+    ======================================================== -->
     <section id="resume" class="resume section">
 
       <!-- Section Title -->
@@ -323,7 +377,7 @@
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
         <div class="row gy-4">
-          <!-- Left column with summary and contact -->
+          <!-- Columna izquierda: Resumen profesional y contacto -->
           <div class="col-lg-4">
             <div class="resume-side" data-aos="fade-right" data-aos-delay="100">
               <div class="profile-img mb-4">
@@ -365,7 +419,7 @@
             </div>
           </div>
 
-          <!-- Right column with experience and education -->
+          <!-- Columna derecha: Experiencia laboral y educación -->
           <div class="col-lg-8 ps-4 ps-lg-5">
             <!-- Experience Section -->
             <div class="resume-section" data-aos="fade-up">
@@ -409,7 +463,11 @@
 
     </section><!-- /Resume Section -->
 
-    <!-- Portfolio Section -->
+    <!-- =======================================================
+    * PORTFOLIO SECTION - Galería de proyectos realizados
+    * Muestra proyectos con videos demostrativos y filtros
+    * Sistema de filtrado por categorías de proyectos
+    ======================================================== -->
     <section id="portfolio" class="portfolio section">
 
       <!-- Section Title -->
@@ -423,8 +481,10 @@
         <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
 
           <div class="row">
+            <!-- Columna izquierda: Filtros de categorías de proyectos -->
             <div class="col-lg-3 filter-sidebar">
               <div class="filters-wrapper" data-aos="fade-right" data-aos-delay="150">
+                <!-- Lista de filtros para categorizar proyectos -->
                 <ul class="portfolio-filters isotope-filters">
                   <li data-filter="*" class="filter-active">Todos</li>
                   <li data-filter=".filter-relojes">Relojes</li>
@@ -435,9 +495,11 @@
               </div>
             </div>
 
+            <!-- Columna derecha: Contenedor de proyectos con grid responsivo -->
             <div class="col-lg-9">
               <div class="row gy-4 portfolio-container isotope-container" data-aos="fade-up" data-aos-delay="200">
 
+                <!-- Proyecto 1: Catálogo de Relojes Michael Kors -->
                 <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-relojes">
                   <div class="portfolio-wrap">
                     <div class="video-container">
@@ -464,8 +526,9 @@
                       </div>
                     </div>
                   </div>
-                </div><!-- End Portfolio Item -->
+                </div><!-- Fin del proyecto: Michael Kors - Catálogo de relojes -->
 
+                <!-- Proyecto 2: Aplicación de Frases Motivacionales "Je Peux" -->
                 <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-frases">
                   <div class="portfolio-wrap">
                     <div class="video-container">
@@ -489,8 +552,9 @@
                       </div>
                     </div>
                   </div>
-                </div><!-- End Portfolio Item -->
+                </div><!-- Fin del proyecto: Je Peux - Frases motivacionales -->
 
+                <!-- Proyecto 3: Quiz Interactivo de Campuslands -->
                 <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-trivia">
                   <div class="portfolio-wrap">
                     <div class="video-container">
@@ -517,8 +581,9 @@
                       </div>
                     </div>
                   </div>
-                </div><!-- End Portfolio Item -->
+                </div><!-- Fin del proyecto: Campus Quiz - Aplicación interactiva -->
 
+                <!-- Proyecto 4: Aplicación Python - Sistema de Envíos -->
                 <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-python">
                   <div class="portfolio-wrap">
                     <div class="video-container">
@@ -544,9 +609,9 @@
                       </div>
                     </div>
                   </div>
-                </div><!-- End Portfolio Item -->
+                </div><!-- Fin del proyecto: Python - Sistema de envíos -->
 
-              </div><!-- End Portfolio Container -->
+              </div><!-- Fin del contenedor de proyectos -->
             </div>
           </div>
 
@@ -556,7 +621,11 @@
 
     </section><!-- /Portfolio Section -->
 
-    <!-- Services Section -->
+    <!-- =======================================================
+    * SERVICES SECTION - Servicios ofrecidos
+    * Lista de servicios que puedo ofrecer como desarrollador
+    * Organizado en grid responsivo con iconos descriptivos
+    ======================================================== -->
     <section id="services" class="services section">
 
       <!-- Section Title -->
@@ -653,7 +722,11 @@
     </section><!-- /Services Section -->
 
    
-    <!-- Contact Section -->
+    <!-- =======================================================
+    * CONTACT SECTION - Información de contacto y formulario
+    * Contiene datos de contacto y formulario funcional
+    * Diseño en dos columnas con información detallada
+    ======================================================== -->
     <section id="contact" class="contact section">
 
       <!-- Section Title -->
@@ -665,6 +738,7 @@
       <div class="container">
 
         <div class="row g-4 g-lg-5">
+          <!-- Columna izquierda: Información de contacto -->
           <div class="col-lg-5">
             <div class="info-box">
               <h3>Contacto</h3>
@@ -705,6 +779,7 @@
             </div>
           </div>
 
+          <!-- Columna derecha: Formulario de contacto -->
           <div class="col-lg-7">
             <div class="contact-form">
               <h3>Formulario</h3>
@@ -749,8 +824,12 @@
 
     </section><!-- /Contact Section -->
 
-  </main>
+  </main><!-- Fin del contenido principal -->
 
+  <!-- =======================================================
+  * FOOTER - Pie de página con información de copyright
+  * Contiene créditos y enlaces de licencia
+  ======================================================== -->
   <footer id="footer" class="footer position-relative">
 
     <div class="container">
@@ -768,10 +847,16 @@
 
   </footer>
 
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <!-- =======================================================
+  * ELEMENTOS ADICIONALES - Componentes de interfaz
+  ======================================================== -->
+  
+  <!-- Botón de scroll hacia arriba -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center" aria-label="Volver arriba">
+    <i class="bi bi-arrow-up-short"></i>
+  </a>
 
-  <!-- Video Modal -->
+  <!-- Modal para reproducción de videos de proyectos -->
   <div id="videoModal" class="video-modal">
     <div class="video-modal-content">
       <span class="video-modal-close">&times;</span>
@@ -782,10 +867,14 @@
     </div>
   </div>
 
-  <!-- Preloader -->
+  <!-- Preloader - Pantalla de carga inicial -->
   <div id="preloader"></div>
 
-  <!-- Vendor JS Files -->
+  <!-- =======================================================
+  * SCRIPTS - Archivos JavaScript necesarios
+  ======================================================== -->
+  
+  <!-- Librerías JavaScript de terceros -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
@@ -797,7 +886,7 @@
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
-  <!-- Main JS File -->
+  <!-- Script principal del portafolio -->
   <script src="assets/js/main.js"></script>
 
 </body>
