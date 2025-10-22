@@ -156,25 +156,6 @@ Edita las variables CSS en `assets/css/main.css`:
 - **Teléfono**: +57 3157832101
 - **Ubicación**: Villa del Rosario, Norte de Santander, Colombia
 
-## 📄 Licencia
-
-Este proyecto está bajo la licencia del template SnapFolio de BootstrapMade. Para uso comercial, consulta la [licencia de BootstrapMade](https://bootstrapmade.com/license/).
-
-## 🙏 Agradecimientos
-
-- **BootstrapMade** - Template SnapFolio
-- **Campuslands** - Formación en desarrollo web
-- **Bootstrap** - Framework CSS
-- **Bootstrap Icons** - Iconografía
-
-## 📈 Estado del Proyecto
-
-- ✅ **Completado**: Diseño y estructura base
-- ✅ **Completado**: Responsive design
-- ✅ **Completado**: Animaciones y efectos
-- ✅ **Completado**: Formulario de contacto
-- 🔄 **En desarrollo**: Nuevos proyectos y mejoras
-
 ---
 
 **Desarrollado con ❤️ por Elkin Anaya** 
